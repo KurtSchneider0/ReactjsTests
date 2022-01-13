@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { FetchRandomUser } from './components/FetchRandomUser';
 import { MyForm } from './components/Forms.js';
