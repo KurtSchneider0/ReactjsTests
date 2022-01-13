@@ -27,7 +27,7 @@ export class FetchRandomUser extends React.Component {
           <div key={person.login.uuid}>
             <p>{person.name.title} {person.name.first} {person.name.last}</p>
             <p>Username: {person.login.username} - Email: {person.email} - Passwort: {person.login.password}</p>
-            <img src={person.picture.large} alt="Image of a person"/>
+            <img src={person.picture.large} alt=""/>
           </div>
         ))}
       </div>
