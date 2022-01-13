@@ -1,15 +1,13 @@
 import React from "react";
-
-const initialState = {
-  name: "",
-  email: "",
-  password: ""
-}
   
 export class MyForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = initialState
+    this.state = {
+      name: "",
+      email: "",
+      password: ""
+    }
   }
   
   handleChange = (event, name) => {
@@ -19,7 +17,11 @@ export class MyForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     console.log(this.state)
-    this.state = this.setState(initialState)
+    this.setState({  
+      name: "",
+      email: "",
+      password: ""
+    })
   }
   
   render() {
