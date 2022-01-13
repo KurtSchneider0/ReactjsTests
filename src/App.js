@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/*<TodoList />*/}
-        {/*<FetchRandomUser value={5} />*/}
-        {/*<MyForm />*/}
-        {/*<Game />*/}
+        <TodoList /> <br/>
+        <FetchRandomUser value={5} /><br/>
+        <MyForm /><br/>
+        <Game /><br/>
       </header>
     </div>
   );
