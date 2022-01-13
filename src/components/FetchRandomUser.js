@@ -17,7 +17,7 @@ export class FetchRandomUser extends React.Component {
   }
   
   render() {
-    if (this.state.loading || this.state.people==[]) {
+    if (this.state.loading || this.state.people===[]) {
       return (<div>loading...</div>)
     }
 
@@ -27,7 +27,7 @@ export class FetchRandomUser extends React.Component {
           <div key={person.login.uuid}>
             <p>{person.name.title} {person.name.first} {person.name.last}</p>
             <p>Username: {person.login.username} - Email: {person.email} - Passwort: {person.login.password}</p>
-            <img src={person.picture.large} />
+            <img src={person.picture.large} alt="Image of a person"/>
           </div>
         ))}
       </div>
